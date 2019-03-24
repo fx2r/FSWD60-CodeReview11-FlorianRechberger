@@ -29,7 +29,7 @@
 				}
 				?>
 			</label>
-		    <a href="actions/a_logout.php?logout"><button type='button' class='btn btn-light my-2 my-md-0' id='logout'>Sign Out</button></a>
+		    <a href="actions/a_logout.php?logout"><button type='button' class='btn btn-secondary my-2 my-md-0' id='logout'>Sign Out</button></a>
 		  </div>
 		</nav>
 		<!----------carousel---------->
@@ -70,6 +70,10 @@
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
+		</div>
+		<!----------breadcrumb---------->
+		<div class="d-flex justify-content-center pt-3 pb-1">
+			<p class="lead">not too exciting...</p>
 		</div>
 	</div>
 </header>
