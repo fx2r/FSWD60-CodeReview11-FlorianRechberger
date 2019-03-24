@@ -7,3 +7,22 @@ fieldset {
 table tr th {
    padding-top: 20px;
 }
+
+.carousel-caption {
+	bottom: 33% !important;
+}
+
+.carousel-caption h5 {
+	font-size: 3.5rem !important;
+}
+
+.carousel-caption p {
+	font-size: 1.5rem;
+}
+
+a>i{
+	text-decoration: none;
+	color: #f8f9fa;
+	font-size: 2.7rem;
+	padding: 0 0.2em;
+}

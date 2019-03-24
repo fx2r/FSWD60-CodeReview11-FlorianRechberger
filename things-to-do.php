@@ -4,7 +4,7 @@ include_once 'actions/a_sessionstart.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home - Welcome to Travel-o-matic</title>
+	<title>Things to Do</title>
 	<!----------meta, stylesheets---------->
 	<?php include_once 'head-part.php'?>
 </head>
