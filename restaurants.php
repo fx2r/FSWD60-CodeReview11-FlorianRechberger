@@ -11,6 +11,10 @@ include_once 'actions/a_sessionstart.php';
 <body>
 	<!----------header---------->
 	<?php include_once 'header.php';?>
+	<!----------main---------->
+	<main class="container" id="main">
+
+	</main>
 	<!----------footer---------->
 	<?php require_once 'footer.php';?>
 	<!----------scripts---------->
