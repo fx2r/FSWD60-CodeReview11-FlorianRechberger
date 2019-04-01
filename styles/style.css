@@ -19,3 +19,13 @@ a>i{
 a {
 	text-decoration: none;
 }
+
+small .class {
+	width: 20%;
+}
+
+.cover {
+	height: 15em;
+    object-fit: cover;
+}
+

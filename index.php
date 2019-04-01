@@ -7,7 +7,7 @@
 </head>
 <body>
   <!----------header---------->
-  <?php include_once 'header-login-signup.php';?>
+  <?php include_once 'nav-register.php';?>
   <!----------main---------->
   <main class="container pt-5 pb-4">
     <form action="actions/a_login.php" method="post" class="">
