@@ -3,27 +3,34 @@
 <head>
 	<title>Login</title>
   <!----------meta, stylesheets---------->
-  <?php include_once 'head-part.php'?>
+  <?php include_once 'head_part.php'?>
 </head>
 <body>
   <!----------header---------->
-  <?php include_once 'nav-register.php';?>
+  <?php include_once 'nav_register.php';?>
   <!----------main---------->
   <main class="container pt-5 pb-4">
     <form action="actions/a_login.php" method="post" class="">
-        <?php
-        if (isset($_GET['error'])) {
-            $errMSG = "Please try again. Or sign up if you are new to my travel blog";
-            echo '
-        <div class="form-group row justify-content-center">
-            <label for="errorMSG" class="col-sm-2"></label>
-            <div class="col-sm-8 col-lg-6 col-xl-5 text-warning" id="errorMSG">
-                '.$errMSG.'
-            </div>
-        </div>
-            ';
-        }
-        ?>
+      <?php
+      if (isset($_GET['error'])) :?>
+      <?php $errMSG = "Please try again. Or sign up if you are new to my travel blog" ?>
+      <div class="form-group row justify-content-center">
+          <label for="errorMSG" class="col-sm-2"></label>
+          <div class="col-sm-8 col-lg-6 col-xl-5 text-warning" id="errorMSG">
+            <span><?php echo $errMSG?></span>
+          </div>
+      </div>
+      <?php endif ?>
+      
+      <?php if (isset($_GET['error2'])): ?>
+      <?php $errMSG = "Have you forgotten your password?";?>
+      <div class="form-group row justify-content-center">
+          <label for="errorMSG" class="col-sm-2"></label>
+          <div class="col-sm-8 col-lg-6 col-xl-5 text-warning" id="errorMSG">
+            <span><?php echo $errMSG?></span>
+          </div>
+      </div>
+      <?php endif ?>
       <div class="form-group row justify-content-center">
         <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-8 col-lg-6 col-xl-5">
@@ -41,8 +48,13 @@
         <div class="d-none d-sm-flex col-sm-2">
         </div>
         <div class="col-sm-8 col-lg-6 col-xl-5">
-          <button type="submit" class="btn btn-success mr-3" name="login">Login</button>
+          <button type="submit" class="btn btn-success mr-3 mb-1" name="login">Login</button>
           <a href="signup.php">sign up</a>
+          <?php if (isset($_GET['error2'])): ?>
+          <button class="btn btn-outline-warning m-0 my-3 my-sm-0 ml-sm-3"><a href="forgot_password.php" class="text-warning">Reset password</a></button>
+          <?php endif ?>
+          <br>
+          <a href="actions/a_login.php?guest" class="font-weight-bold text-muted">Use guest account</a>
         </div>
       </div>
     </form>

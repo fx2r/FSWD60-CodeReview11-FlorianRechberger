@@ -3,11 +3,11 @@
 <head>
   <title>Login</title>
   <!----------meta, stylesheets---------->
-  <?php include_once 'head-part.php'?>
+  <?php include_once 'head_part.php'?>
 </head>
 <body>
   <!----------header---------->
-  <?php include_once 'nav-register.php';?>
+  <?php include_once 'nav_register.php';?>
   <!----------main---------->
   <main class="container pt-5 pb-4">
     <form action="actions/a_signup.php" method="post" class="">

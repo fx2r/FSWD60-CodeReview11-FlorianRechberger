@@ -1,5 +1,3 @@
-<!-- couln't make this file work - problem was that I didn't know how to display the error messages
-inside settings.php withouth moving most of the php code -->
 <?php
 require_once 'a_sessionstart.php';
 ?>
@@ -18,6 +16,7 @@ $error = false;
 
 if(isset($_POST['create'])) {
 
+	$id= $_POST['to_do_id'];
 	$img_url= $_POST['img_url'];
 	$name= $_POST['name'];
 	$type= $_POST['type'];
@@ -68,10 +67,11 @@ if(isset($_POST['create'])) {
 				$_SESSION['message'] = 'Record has been created!';
 				$_SESSION['msg_type'] = 'success';
 		    } else {
-		        echo "Error: " . mysqli_error($conn);
+		        echo "Error while adding record: " . mysqli_error($conn);
 		    }
-		    header('location: ../settings.php');
 		}
-		
+	header('location: ../things_to_do.php');
+	$conn->close(); //do I really need this?
+	ob_end_flush(); //do I really need this?
 	}
 ?>

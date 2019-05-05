@@ -6,7 +6,7 @@ include_once 'actions/a_sessionstart.php';
 <head>
 	<title>Concerts</title>
 	<!----------meta, stylesheets---------->
-	<?php include_once 'head-part.php'?>
+	<?php include_once 'head_part.php'?>
 </head>
 <body>
 	<!----------header---------->

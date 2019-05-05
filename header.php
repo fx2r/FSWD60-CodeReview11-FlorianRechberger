@@ -9,16 +9,16 @@
 			<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 					<li class="nav-item active">
-						<a class="nav-link" href="home.php">TravelFox <span class="sr-only">(current)</span></a>
+						<a class="nav-link mr-md-2" href="home.php">TravelFox <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="things-to-do.php#main">Things to do</a>
+						<a class="nav-link mr-md-2" href="things_to_do.php">Things to do</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="concerts.php#main">Concerts</a>
+						<a class="nav-link mr-md-2" href="concerts.php">Concerts</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="restaurants.php#main">Restaurants</a>
+						<a class="nav-link mr-md-2" href="restaurants.php">Restaurants</a>
 					</li>
 					<?php 
 					if (isset($_SESSION['admin'])): ?>
@@ -32,7 +32,7 @@
 					if (isset($_SESSION['admin'])) {
 						echo "Logged in! (admin)";
 					} elseif (isset($_SESSION['user'])) {
-						echo "Logged in as ".$name["first_name"]."";
+						echo "Logged in as ".$user["first_name"]."";
 					}
 					?>
 				</p>
@@ -50,23 +50,20 @@
 		<div class="carousel-inner">
 			<div class="carousel-item active">
 				<img class="d-block w-100" src="sources/images/placeimg_1000_480_nature_1.jpg" alt="First slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Somewhere</h5>
-					<p>Be a traveller, not a tourist.</p>
+				<div class="d-none d-sm-flex flex-column align-items-center justify-content-center h-100 carousel-caption">
+					<h1 class="mt-5">Be a traveller, not a tourist.</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img class="d-block w-100" src="sources/images/placeimg_1000_480_nature_2.jpg" alt="Second slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Not in Vienna</h5>
-					<p>Be a traveller, not a tourist.</p>
+				<div class="d-none d-sm-flex flex-column align-items-center justify-content-center h-100 carousel-caption">
+					<h1 class="mt-5">Be a traveller, not a tourist.</h1>
 				</div>
 			</div>
 			<div class="carousel-item">
 				<img class="d-block w-100" src="sources/images/placeimg_1000_480_nature_3.jpg" alt="Third slide">
-				<div class="carousel-caption d-none d-md-block">
-					<h5>Not in Vienna</h5>
-					<p>Be a traveller, not a tourist.</p>
+				<div class="d-none d-sm-flex flex-column align-items-center justify-content-center h-100 carousel-caption">
+					<h1 class="mt-5">Be a traveller, not a tourist.</h1>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-if(isset($_SESSION['user'])!="" ){
+if(isset($_SESSION['user' || 'admin'])!="" ){
   header("Location: ../home.php");
 }
 include_once 'db_connect.php'; //what's the difference include_once/require_once
@@ -11,7 +11,7 @@ include_once 'db_connect.php'; //what's the difference include_once/require_once
 <head>
   <title>Sigend up</title>
   <!----------meta, stylesheets---------->
-  <?php include_once '../head-part.php' //error in console because of wrong level for custom css?>
+  <?php include_once '../head_part.php' //error in console because of wrong level for custom css?>
 </head>
 <body>
   <!----------main---------->
