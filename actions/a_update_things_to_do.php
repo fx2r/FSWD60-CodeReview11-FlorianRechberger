@@ -74,7 +74,16 @@ if(isset($_POST['update'])) {
 	}
 	//if there's no error the entry will be updated into the database
 	if (!$error) {
-		$query = "UPDATE things_to_do SET img_url = '$img_url', name = '$name', `type` = '$type', short_description = '$short_description', website = '$website', street = '$street', postal_code = '$postal_code', city = '$city' WHERE to_do_id = $id"; 
+		$query = "UPDATE things_to_do SET
+		img_url = '$img_url',
+		name = '$name',
+		`type` = '$type',
+		short_description = '$short_description',
+		website = '$website',
+		street = '$street',
+		postal_code = '$postal_code',
+		city = '$city'
+		WHERE to_do_id = $id"; 
 		if (mysqli_query($conn, $query)) {
 				$_SESSION['message'] = 'Record has been updated!';
 				$_SESSION['msg_type'] = 'success';

@@ -36,7 +36,7 @@ require_once 'actions/a_sessionstart.php';
 		     		<?php while($row = $result->fetch_assoc()): ?>
 		     	<div class="col-md-6 col-lg-4 mb-4">	
 					<div class="card h-100">
-						<div class="img-container-custom d-flex justify-content-center align-items-center">
+						<div class="img-container-custom bg-light">
 							<a href="<?php echo $row['img_url']; ?>"><img class="card-img-top cover" src="<?php echo $row['img_url']; ?>" alt="Card image cap"><a>
 						    <a href="<?php echo $row['website']; ?>"><div class="img-overlay text">Visit Organiser</div></a>
 						</div>

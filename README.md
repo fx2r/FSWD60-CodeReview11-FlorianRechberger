@@ -1,4 +1,5 @@
 # FSWD60-CodeReview11-FlorianRechberger
+A CRUD application with register and login (user, admin)
 
 # TravelFox(codreview) is hungry
 -for admin-login choose the following account:
@@ -13,11 +14,11 @@ Password felixfelix
 
 # Bugs, M'Lady!
 1)Lady Sisi is not allowed to live in a Schloßstraße, but must rather reside in the Schlossstrasse at best ...in other words: Spelling didnt't matter so much in the past. (meaning when updating you must escape \' ...German 'Umlaute' and ß are fine)
+2)active nav-link not working
 
-# Yet to be dealt with or implemented
+# Yet to be implemented
 1)register input verification
 2)login input verification
 3)advanced create/update input varification for all events
 4)add favicons to footer-part of cards
 5)wider viewpoint; more cards in a row at wider viewpoint
-6)

@@ -1,8 +1,6 @@
 <?php
 require_once 'a_sessionstart.php';
-?>
 
-<?php
 $img_urlError="";
 $nameError="";
 $typeError="";
@@ -69,9 +67,8 @@ if(isset($_POST['create'])) {
 		    } else {
 		        echo "Error while adding record: " . mysqli_error($conn);
 		    }
-		}
-	header('location: ../things_to_do.php');
-	$conn->close(); //do I really need this?
-	ob_end_flush(); //do I really need this?
 	}
-?>
+	header('location: ../things_to_do.php');
+	$conn->close();
+	ob_end_flush(); //why do I really need this?
+}
