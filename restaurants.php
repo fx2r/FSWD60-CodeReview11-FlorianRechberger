@@ -55,7 +55,7 @@ require_once 'actions/a_sessionstart.php';
 							<br>
 							<div class="mt-2">
 								<a href="update_restaurants.php?update=<?php echo $row['restaurant_id']; ?>" class="btn btn-warning">Update</a>
-								<a href="actions/a_delete_to_do.php?delete=<?php echo $row['restaurant_id']; ?>" class="btn btn-danger">Delete</a>
+								<a href="actions/a_delete_restaurant.php?delete=<?php echo $row['restaurant_id']; ?>" class="btn btn-danger">Delete</a>
 							</div>
 							<?php } ?>
 						</div>

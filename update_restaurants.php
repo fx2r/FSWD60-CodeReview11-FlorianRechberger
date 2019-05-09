@@ -44,7 +44,7 @@
 				                	<?php if (isset($_SESSION['cuisineError'])) {echo $_SESSION['cuisineError']; unset($_SESSION['cuisineError']);} ?>
 				                </span>
 							<!-- <label for="short_description">Short Description</label> -->
-				                <textarea type="text" class="form-control" name="short_description" id="short_description" placeholder="Short Description" rows="5" maxlength="300"><?php if (isset($_SESSION['short_description'])) {echo $_SESSION['short_description']; unset($_SESSION['short_description']);}else{echo $short_description;}?></textarea>
+				                <textarea type="text" class="form-control" name="short_description" id="short_description" placeholder="Short Description" rows="5" maxlength="1000"><?php if (isset($_SESSION['short_description'])) {echo $_SESSION['short_description']; unset($_SESSION['short_description']);}else{echo $short_description;}?></textarea>
 				                <span class="text-danger">
 				                	<?php if (isset($_SESSION['short_descriptionError'])) {echo $_SESSION['short_descriptionError']; unset($_SESSION['short_descriptionError']);} ?>
 				                </span>

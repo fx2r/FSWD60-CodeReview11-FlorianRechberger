@@ -15,6 +15,7 @@ Password felixfelix
 # Bugs, M'Lady!
 1)Lady Sisi is not allowed to live in a Schloßstraße, but must rather reside in the Schlossstrasse at best ...in other words: Spelling didnt't matter so much in the past. (meaning when updating you must escape \' ...German 'Umlaute' and ß are fine)
 2)active nav-link not working
+3)why do I have to escape "''" and "!" on the update pages ...every singele time  ...otherwise a fatal error is thrown
 
 # Yet to be implemented
 1)register input verification
@@ -24,3 +25,4 @@ Password felixfelix
 5)wider viewpoint; more cards in a row at wider viewpoint
 6)add 'go back' button on each update page (things_to_do, concerts, restaurants)
 7)refactor the create pages so that php and html is neatly seperated like in the update pages. move variables to actions
+8)heading and sub-headings are not on the same line if heading takes up more than one line. when the sub-heading is being pushed to further down, the sub-headings of other cards in the same row are not lining up with the sub-heading that had been pushed further down.
