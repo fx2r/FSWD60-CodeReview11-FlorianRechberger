@@ -25,7 +25,7 @@ require_once 'actions/a_sessionstart.php';
 				<!----------add restaurant to do FORM----------->
 				<?php
 				if (isset($_SESSION['admin'])) {
-					include_once 'create_restaurant.php';
+					include_once 'create_restaurants.php';
 				}
 				?>
 				<!----------continue main---------->
@@ -54,7 +54,7 @@ require_once 'actions/a_sessionstart.php';
 							<?php if (isset($_SESSION['admin'])) { ?>
 							<br>
 							<div class="mt-2">
-								<a href="update_things_to_do.php?update=<?php echo $row['restaurant_id']; ?>" class="btn btn-warning">Update</a>
+								<a href="update_restaurants.php?update=<?php echo $row['restaurant_id']; ?>" class="btn btn-warning">Update</a>
 								<a href="actions/a_delete_to_do.php?delete=<?php echo $row['restaurant_id']; ?>" class="btn btn-danger">Delete</a>
 							</div>
 							<?php } ?>

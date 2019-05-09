@@ -22,3 +22,5 @@ Password felixfelix
 3)advanced create/update input varification for all events
 4)add favicons to footer-part of cards
 5)wider viewpoint; more cards in a row at wider viewpoint
+6)add 'go back' button on each update page (things_to_do, concerts, restaurants)
+7)refactor the create pages so that php and html is neatly seperated like in the update pages. move variables to actions
